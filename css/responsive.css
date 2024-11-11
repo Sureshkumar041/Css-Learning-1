@@ -1,0 +1,132 @@
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 767px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #12265b;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        margin: 15px 0;
+    }
+
+    /* Submenu Styles for Mobile */
+    .submenu {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    /* Show Hamburger on Small Screens */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Toggle Menu on Checkbox Checked */
+    .menu-toggle:checked~.nav-links {
+        display: block;
+    }
+
+    .menu-toggle:checked~.nav-links ul {
+        display: flex;
+    }
+
+    /* Animate Hamburger Icon to "X" */
+    .menu-toggle:checked+.hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+    }
+
+    .contain {
+        padding: 50px 50px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .contain {
+        padding: 50px 100px;
+    }
+
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #12265b;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        margin: 15px 0;
+    }
+
+    /* Submenu Styles for Mobile */
+    .submenu {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    /* Show Hamburger on Small Screens */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Toggle Menu on Checkbox Checked */
+    .menu-toggle:checked~.nav-links {
+        display: block;
+    }
+
+    .menu-toggle:checked~.nav-links ul {
+        display: flex;
+    }
+
+    /* Animate Hamburger Icon to "X" */
+    .menu-toggle:checked+.hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .contain {
+        padding: 50px 200px;
+    }
+}

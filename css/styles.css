@@ -1,0 +1,721 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0px !important;
+}
+
+/* Start Css Variable */
+:root {
+    --skyBlue: #44b3de;
+    --lightBlue: #79c8e9;
+    --darkBlue: #12265b;
+    --lightYellow: #ffc85b;
+    --pink: #fb9db7;
+    --lightPink: #faadbe;
+    --white: #ffffff;
+    --grey: #808080;
+    --lightGrey: #b2b9c7;
+    --blueGrey: #f2f6ff;
+    --lightGray: #D3D3D3;
+    --red: #dc3545;
+}
+
+/* End Css Variable */
+
+/* Apply styles to the scrollbar container */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+/* Style for the scrollbar track (background area) */
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+/* Style for the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: var(--lightGrey);
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+
+/* Start Button Css */
+.button {
+    outline: none !important;
+    border: none;
+    color: var(--white);
+    background: var(--darkBlue);
+    height: 45px;
+    padding: 0px 60px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: var(--lightGrey) 0px 1px 2px 0px;
+    position: relative;
+}
+
+.button1 {
+    outline: none !important;
+    border: none;
+    color: var(--white);
+    background: var(--darkBlue);
+    padding: 0px 14px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: var(--lightGrey) 0px 1px 2px 0px;
+    position: relative;
+}
+
+.lightBlueBtn {
+    background: var(--lightBlue);
+}
+
+.lightYellowBtn {
+    background: var(--lightYellow);
+}
+
+.lightPinkBtn {
+    background: var(--lightPink);
+}
+
+/* End Button Css */
+
+/* Start Header Css */
+
+.header {}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    text-transform: uppercase;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 24px;
+    text-align: center;
+}
+
+.logo img {
+    height: 65px;
+    width: auto;
+}
+
+.code-text {
+    color: #3d3b64;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.kids-text {
+    color: #fba1b7;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: system-ui;
+}
+
+.cart-container {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #fba1b7;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart-container:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    right: -5px;
+    left: -5px;
+    border: 3px dashed var(--lightPink);
+    border-radius: 25px;
+}
+
+.cart-container i {
+    color: #ffff;
+    font-size: large;
+}
+
+/* End Header Css */
+
+/* Start Home Bg Image Css */
+
+.home-bg-img {
+    height: calc(100vh - 85px);
+    background-image: url("../images/circle-children5.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    background-position: right;
+}
+
+.home-bg-img:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    /* Adjust height for the wave size */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,224L60,218.7C120,213,240,203,360,176C480,149,600,107,720,101.3C840,96,960,128,1080,122.7C1200,117,1320,75,1380,53.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    filter: opacity(0.6);
+}
+
+.inner-container {
+    padding: 10px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 40px;
+    height: 100%;
+    width: 60%;
+}
+
+.home-section .title {
+    color: var(--darkBlue);
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.home-section .helper-text {
+    color: var(--white);
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/* End Home Bg Image Css */
+
+/*  */
+.section2 {
+    background: var(--blueGrey);
+}
+
+.section2 .flexRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.childrenImg {
+    height: auto;
+    width: 45%;
+    position: relative;
+
+    img {
+        height: auto;
+        width: 100%;
+        z-index: 1;
+        border-radius: 25px;
+        position: relative;
+    }
+}
+
+.childrenImg:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    bottom: 15px;
+    right: 15px;
+    left: -15px;
+    border: 3px dashed var(--lightPink);
+    z-index: 0;
+    border-radius: 25px;
+}
+
+.section2 .title-container {
+    position: relative;
+}
+
+.section2 .text-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: flex-start;
+}
+
+.section2 .title {
+    color: var(--darkBlue);
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.section2 .title:after {
+    content: "";
+    height: 36%;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    display: inline-block;
+}
+
+.section2 .title.bg-pink:after {
+    background: #f5cadb;
+}
+
+.section2 .title.bg-yellow:after {
+    background: #fae0ad;
+}
+
+.section2 .helper-text {
+    color: var(--grey);
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
+.section2 .button:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    border: 2px dashed var(--white);
+    border-radius: 25px;
+}
+
+/*  */
+
+/* Start Card Css */
+
+.section3 .grid-res {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(31%, 1fr));
+}
+
+.card-container {
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 12px;
+    padding: 20px;
+}
+
+.card-container.bg-pink {
+    background-color: var(--pink);
+}
+
+.card-container.bg-blue {
+    background-color: var(--skyBlue);
+}
+
+.card-container.bg-yellow {
+    background-color: var(--lightYellow);
+}
+
+.card-container .card-img-container {
+    height: auto;
+    width: 45%;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.card-container .read-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+
+    i {
+        color: var(--white);
+        font-size: 20px;
+    }
+}
+
+.card-container .title {
+    color: var(--white);
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.card-container .helper-text {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.card-container .small-text {
+    color: var(--white);
+    font-size: 12px;
+}
+
+/* End Card Css */
+
+/* Start Our Quantities Css*/
+
+.quanlities-section {}
+
+.quanlities-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.quanlities-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+.quanlities-text .title {
+    color: var(--darkBlue);
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.quanlities-text .title:after {
+    content: "";
+    height: 36%;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    display: inline-block;
+}
+
+.quanlities-text .title:after {
+    background: #f5cadb;
+}
+
+.quanlities-text .helper-text {
+    color: var(--grey);
+    font-size: 14px;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.quanlities-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 2rem;
+}
+
+.quanlities-item {
+    display: flex;
+    column-gap: 14px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.quanlities-img {
+    width: 60%;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.quanlities-item-text .title {
+    color: var(--darkBlue);
+    font-size: 24px;
+    line-height: 5rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.quanlities-item-text .helper-text {
+    color: var(--grey);
+    font-size: 12px;
+    text-align: justify;
+}
+
+/* End Our Quantities Css*/
+
+/* Start Contact Section Css */
+.contact-section {}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.contact-form-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--lightGray);
+    padding: 0px 18px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 0;
+    border-radius: 4px;
+    outline: none;
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 200px;
+    padding: 18px;
+    border: 1px solid var(--lightGray);
+    resize: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+    outline: none;
+}
+
+.contact-text .title {
+    color: var(--darkBlue);
+    font-size: 24px;
+    line-height: 5rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.contact-text .title:after {
+    content: "";
+    height: 36%;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    display: inline-block;
+}
+
+.contact-text .title:after {
+    background: #f5cadb;
+}
+
+.contact-text .helper-text {
+    color: var(--grey);
+    font-size: 12px;
+    text-align: justify;
+}
+
+.contact-form .button:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    border: 2px dashed var(--white);
+    border-radius: 25px;
+}
+
+/* End Contact Section Css */
+
+/* Start Social Media Links Css  */
+.media-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.media-link-container>div {
+    width: 30px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+
+    i {
+        font-size: 15px;
+        color: var(--white);
+    }
+}
+
+.media-link-container {
+    .bg-skyBlue {
+        background: var(--lightBlue);
+    }
+
+    .bg-pink {
+        background: var(--lightPink);
+    }
+
+    .bg-blue {
+        background: var(--darkBlue);
+    }
+
+    .bg-red {
+        background: var(--red);
+    }
+}
+
+/* End Social Media Links Css  */
+
+/* Start Footer Css  */
+
+.footer-section {
+    background: #2c4073;
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+}
+
+.footer-container {
+    position: relative;
+    z-index: 2;
+    /* Puts text behind the SVG */
+    text-align: center;
+    /* padding: 70px 0; */
+    bottom: -70px;
+
+    p {
+        color: var(--lightGrey);
+        font-size: 12px;
+
+        a {
+            color: var(--white);
+        }
+    }
+}
+
+.footer-section svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    /* Ensures the SVG wave is on top of the text */
+}
+
+/* End Footer Css  */
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.75);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.card-container,
+.childrenImg,
+.quanlities-item,
+.animateOn-Scroll {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+/* Start FadeIn Text Css */
+.fade-in-text,
+.title,
+button,
+p {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* End FadeIn Text Css */
+
+/* Start SlideIn Text Css */
+.slide-in-text {
+    transform: translateX(-100%);
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* End SlideIn Text Css */

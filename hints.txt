@@ -1,0 +1,5 @@
+1. open html editor
+2. Take task.jpg as reference
+3. Write your html code in "index.html" and css code in "css/styles.css"
+4. Use images from "images" folder" and default font that is already defined in CSS
+5. Match to fit exact look and feel as in "task.jpg"

@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/css/navabr.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">LogO</div>
+
+      <!-- Hidden Checkbox for Toggling Menu -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-links">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="">React</a></li>
+          <li>
+            <a href="#">Services</a>
+            <!-- Submenu -->
+            <ul class="submenu">
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">App Development</a></li>
+              <li><a href="#">Consulting</a></li>
+            </ul>
+          </li>
+          <li><a href="">Get</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
